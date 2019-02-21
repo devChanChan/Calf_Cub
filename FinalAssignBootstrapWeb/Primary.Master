@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Primary.master.cs" Inherits="FinalAssignBootstrapWeb.Primary" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Calf & Cub</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="<%=ResolveUrl("~/css/scripts/jquery.marquee.js")%>"></script>
+    <script src="<%=ResolveUrl("~/css/scripts/jquery.pause.min.js")%>"></script>
+    <script>
+        $(function(){
+            $('.marquee').marquee();   
+        });
+    </script>
+</head>
+<body>
+    <div class="container h-100">
+        <form id="mainForm" runat="server">
+            <header class="fixed-top">
+                <div class="marquee">
+                    <p class="lead" id="pTicker" runat="server"></p>
+                </div>
+            </header>
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-dark bg-light nav-pills">
+                        <asp:ImageButton ID="imgBtnLogo" runat="server" CssClass="navbar-brand" Height="80px" ImageUrl="~/images/Calf-Cub2.png" OnClick="imgBtnLogo_Click" CausesValidation="False" ValidateRequestMode="Disabled" />
+                        <asp:HyperLink ID="lnkDashboard" CssClass="nav-item nav-link" runat="server" NavigateUrl="~/auth/Dashboard.aspx">Dashboard</asp:HyperLink>
+                        <asp:HyperLink ID="lnkProfile" CssClass="nav-item nav-link" runat="server" NavigateUrl="~/auth/MyProfile.aspx">My Profile</asp:HyperLink>
+                        <asp:HyperLink ID="lnkGroups" CssClass="nav-item nav-link" runat="server" NavigateUrl="~/auth/GroupDirectory.aspx">Groups</asp:HyperLink>
+                        <asp:HyperLink ID="lnkScores" CssClass="nav-item nav-link" runat="server" NavigateUrl="~/Highscores.aspx">Highscores</asp:HyperLink>
+                        <asp:HyperLink ID="lnkRegister" CssClass="nav-item nav-link" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+                        <asp:HyperLink ID="lnkLogIn" CssClass="nav-item nav-link" runat="server" NavigateUrl="~/LogIn.aspx">Sign In</asp:HyperLink>
+                        <asp:LinkButton ID="lnkLogOut" CssClass="nav-item nav-link" runat="server" OnClick="lnkLogOut_Click">Sign Out</asp:LinkButton>
+                    </nav>
+                </div>
+            </div>
+            <div id="template-main" class="row h-100 justify-content-center align-items-center">
+                <div class="col-12">
+                    <asp:ContentPlaceHolder ID="MainContentPlaceholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="template-small-L" class="row">
+                <div class="col-sm-4 container">
+                    <asp:ContentPlaceHolder ID="SmallLeftPlaceholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-sm-8 container">
+                    <asp:ContentPlaceHolder ID="MainContentPlaceholder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="template-small-R" class="row">
+                <div class="col-sm-8">
+                    <asp:ContentPlaceHolder ID="MainContentPlaceholder3" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-sm-4">
+                    <asp:ContentPlaceHolder ID="SmallRightPlaceholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </form>
+        <footer class="page-footer font-small fixed-bottom bg-light">
+            <div class="container-fluid" style="color:#F36021;">
+                <div id="balanceContainer" class="lead font-weight-bold text-center" runat="server">Account Balance:
+                    <asp:Label ID="lblBalance" CssClass="lead font-weight-bold" runat="server" Text=""></asp:Label>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

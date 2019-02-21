@@ -1,0 +1,151 @@
+﻿@font-face {
+    font-family: 'GothamBold';
+    src: url(./font/GothamBold.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url(./font/GothamBookRegular.otf) format('truetype');
+}
+
+body {
+    overflow-x: hidden;
+    font-family: GothamBook, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: GothamBold, sans-serif !important;
+}
+
+.marquee {
+    padding-top: 5px;
+}
+
+#mainForm {
+    margin-top: 1.475em;
+    margin-bottom: 3em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 30px;
+    
+}
+
+header > * {
+    line-height: 19px;
+    vertical-align: middle;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 325px;
+    overflow-y: hidden;
+    object-fit: cover;
+    margin-bottom: 1.25em;
+}
+
+#ProfileHeader {
+    width: 100%;
+    text-align: center;
+}
+
+#GroupDetails > div {
+    display: inline-block;
+    padding: 0 0.25em;
+}
+
+/* 
+    Custom Styling for Company Cards
+    LandingPage.aspx, Dashboard.aspx
+    MyProfile.aspx
+*/
+.card-img-top {
+    width: unset !important;
+    padding: 1em !important;
+}
+
+.card {
+    min-width: 240px !important;
+    margin: 0.5em 0;
+}
+
+.cardbody > h4, .cardbody > p {
+    text-align: center !important;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.companyContent {
+    text-decoration: none !important;
+}
+
+#companyListing, #MainContentPlaceholder3_ddCompanies {
+    margin: 1.25em 0;
+}
+
+#companyListing {
+    justify-content: center;
+}
+
+/* Custom Styling for ViewCompany.aspx */
+.companyInfo {
+    margin: 0 2.5em;
+}
+.companyInfo > table {
+    text-align: center;
+}
+#transactions {
+   text-align: center;
+}
+#transactions > tbody > tr > td > input {
+    width: 100% !important;
+}
+
+/* Custom Styling for GroupDirectory.aspx */
+#MainContentPlaceholder_GroupInvites > tbody > tr > td:nth-child(1),
+#MainContentPlaceholder_GroupMemberships > tbody > tr > td:nth-child(1),
+#MainContentPlaceholder_GroupListing > tbody > tr > td:nth-child(1) {
+    width: 60px;
+}
+
+#MainContentPlaceholder_GroupInvites > tbody > tr > td:nth-child(2) {
+    width: 60px;
+}
+
+#invites, #directory, #memberships {
+    margin-bottom: 2.5em;
+}
+
+/* Custom Styling or ViewGroup.aspx */
+#MainContentPlaceholder2_lvlRights > tbody > tr > td:nth-child(1),
+#MainContentPlaceholder2_lvlOwner > tbody > tr > td:nth-child(1),
+#MainContentPlaceholder2_lvlOwner > tbody > tr > td:nth-child(2),
+#MainContentPlaceholder2_lvlOwner > tbody > tr > td:nth-child(3) {
+    text-align: center;
+}
+
+/* Custom Styling for Highscores */
+#MainContentPlaceholder_ActivePlayer {
+    background-color: #F36021 !important;
+    color: white;
+}
+
+/* Custom Styling for Events */
+#SmallRightPlaceholder_AllEvents > p > strong,
+#SmallLeftPlaceholder_AllEvents > p > strong,
+#MainContentPlaceholder2_AllEvents > p > strong {
+    color: #F36021;
+}
+
+#SmallRightPlaceholder_AllEvents,
+#SmallLeftPlaceholder_AllEvents,
+#MainContentPlaceholder2_AllEvents {
+    max-height: 400px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
