@@ -3,34 +3,34 @@ A Stock Trading game, in which you can buy and sell virtual stocks in a dynamic 
 Stock prices are not static, they change dynamically and are affected by random events which occur every few minutes. Within the game, you can follow dynamic market situations, trade virtual stocks, make a group, and compete with the other players by trading
 
 ## Landing page
-![Landing page](https://imgur.com/a/lWYPLuS)
+![Landing page](https://i.imgur.com/73lk6Oq.png)
 
 ## Register page
-![Register page](https://imgur.com/EKq8Tma)
+![Register page](https://i.imgur.com/EKq8Tma.png)
 
 ## Login page
-![Login page](https://imgur.com/fM4Dgj1)
+![Login page](https://i.imgur.com/fM4Dgj1.png)
 
 ## Dashboard page
-![Dashboard page](https://imgur.com/zJpyrM4)
+![Dashboard page](https://i.imgur.com/zJpyrM4.png)
 
 ## Company page
-![Company page](https://imgur.com/RzEXOg2)
+![Company page](https://i.imgur.com/RzEXOg2.png)
 
 ## MyProfile page
-![MyProfile page](https://imgur.com/GTqW7Qs)
+![MyProfile page](https://i.imgur.com/GTqW7Qs.png)
 
 ## Groups page
-![Groups page](https://imgur.com/RVuLWY7)
+![Groups page](https://i.imgur.com/RVuLWY7.png)
 
 ## Highscores page
-![Highscores page](https://imgur.com/2THrfeH)
+![Highscores page](https://i.imgur.com/2THrfeH.png)
 
 ## Class Diagram
-![Class Diagram](https://imgur.com/O7gH7Wg)
+![Class Diagram](https://i.imgur.com/O7gH7Wg.png)
 
 ## Database Diagram
-![Database Diagram](https://imgur.com/J6KBPke)
+![Database Diagram](https://i.imgur.com/J6KBPke.png)
 
 ## Authors
 
